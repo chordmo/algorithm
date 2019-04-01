@@ -44,6 +44,8 @@ export class RadialComponent implements OnInit {
 
 
     console.log(this.girth(100, 90));
+    console.log(this.radius(157.07963267948966, 90));
+    console.log(this.angle(157.07963267948966, 100));
 
 
   }
@@ -57,12 +59,12 @@ export class RadialComponent implements OnInit {
   }
 
   /**
-   * 给一个周长来求圆的半径
+   * 求圆的半径
    * @param g 圆的周长
    * @param a 角的大小
    */
   radius(g, a) {
-    return g / 2 * Math.PI * (a / 360);
+    return g / (2 * Math.PI * (a / 360));
   }
 
   /**
@@ -71,7 +73,7 @@ export class RadialComponent implements OnInit {
    * @param r 圆的半径
    */
   angle(g, r) {
-    return g / 2 * Math.PI * r * 360;
+    return g / (2 * Math.PI * r) * 360;
   }
 
 }
