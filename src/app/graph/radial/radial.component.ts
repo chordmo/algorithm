@@ -27,7 +27,7 @@ export class RadialComponent implements OnInit {
     ctx.stroke();
 
 
-    for (let a = 0; a <= 180; a += 10) {
+    for (let a = 0; a <= 360; a += 10) {
       console.log(a);
       const ax = x + r * Math.cos(a * Math.PI / 180);
 
