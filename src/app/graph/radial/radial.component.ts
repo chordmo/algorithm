@@ -22,7 +22,7 @@ export class RadialComponent implements OnInit {
     const ctx: CanvasRenderingContext2D =
       this.canvasRef.nativeElement.getContext('2d');
     ctx.beginPath();
-    ctx.arc(x, y, 1, 0, 2 * Math.PI);
+    ctx.arc(x, y, 20, 0, 2 * Math.PI);
     ctx.stroke();
 
 
@@ -32,7 +32,7 @@ export class RadialComponent implements OnInit {
 
       const ay = y + r * Math.sin(a * Math.PI / 180);
 
-      ctx.arc(ax, ay, 1, 0, 2 * Math.PI);
+      ctx.arc(ax, ay, 10, 0, 2 * Math.PI);
       ctx.stroke();
     }
 
