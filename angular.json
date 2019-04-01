@@ -133,6 +133,41 @@
           }
         }
       }
+    },
+    "algorithm-lib": {
+      "root": "projects/algorithm-lib",
+      "sourceRoot": "projects/algorithm-lib/src",
+      "projectType": "library",
+      "prefix": "am",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/algorithm-lib/tsconfig.lib.json",
+            "project": "projects/algorithm-lib/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/algorithm-lib/src/test.ts",
+            "tsConfig": "projects/algorithm-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/algorithm-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/algorithm-lib/tsconfig.lib.json",
+              "projects/algorithm-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "algorithm"

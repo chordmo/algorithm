@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "algorithm-lib": [
+        "dist/algorithm-lib"
+      ],
+      "algorithm-lib/*": [
+        "dist/algorithm-lib/*"
+      ]
+    }
   }
 }

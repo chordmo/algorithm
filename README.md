@@ -1,5 +1,22 @@
 # Algorithm
 
+
+ng g library algorithm-lib --prefix am
+
+ng generate module graph/radial --project=algorithm-lib
+
+ng generate class graph/radial/radial --project=algorithm-lib
+
+
+
+ng generate component graph/radial --project=algorithm-lib
+
+
+
+ng generate class graph/radial/public-api --project=algorithm-lib
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.1.
 
 ## Development server
