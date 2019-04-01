@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { RadialComponent } from './graph/radial/radial.component';
 
 const routes: Routes = [
-  { path: 'radial', component: RadialComponent }
+  { path: '', component: RadialComponent },
 ];
 
 @NgModule({
